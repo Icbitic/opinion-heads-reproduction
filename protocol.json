@@ -1,0 +1,77 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "heads": [
+    [
+      15,
+      8
+    ],
+    [
+      14,
+      23
+    ],
+    [
+      14,
+      7
+    ],
+    [
+      16,
+      29
+    ],
+    [
+      13,
+      18
+    ],
+    [
+      14,
+      20
+    ],
+    [
+      16,
+      28
+    ],
+    [
+      14,
+      5
+    ],
+    [
+      12,
+      4
+    ],
+    [
+      13,
+      2
+    ]
+  ],
+  "head_indexing": "Zero-based layer and query-head indices; cumulative order transcribed from paper Figure S2.",
+  "answer_token_ids": [
+    32,
+    33,
+    34,
+    35
+  ],
+  "chat_template_sha256": "ca5b86f15c19b53c24ff18228849e06ffb677b952d85171c66d9b720d924f9bb",
+  "batch_size": 33,
+  "dtype": "bfloat16",
+  "attention_backend": "sdpa",
+  "reference_environment": {
+    "python": "3.12",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "numpy": "2.4.6",
+    "tokenizers": "0.22.2"
+  },
+  "paper": "Tracing Mechanisms of Sycophantic Agreement in Language Models",
+  "dataset": {
+    "name": "cais/mmlu",
+    "revision": "c30699e8356da336a370243923dbaf21066bb9fe",
+    "split": "test",
+    "cohort_size": 416,
+    "selection": "From the 15 paper subjects and questions of at most 1000 characters: clean ABCD argmax correct; every label/content swap favors its newly correct label over the original label; at least one wrong-label opinion favors its target over the correct label. Choose the wrong target minimizing correct-minus-target logit difference (first-index tie break). Selection uses the paper prompt; never reselect for adjusted prompts.",
+    "source": "https://huggingface.co/datasets/cais/mmlu/tree/c30699e8356da336a370243923dbaf21066bb9fe"
+  },
+  "files_sha256": {
+    "data/cohort.jsonl": "13ed7d33213e5af9248ebdeed8e1634800097ec65bd939ce3168d55e7613abcc",
+    "results/reference.jsonl": "90f25e57d572510a082f8cb5bd99651fb8a6ab96c98dd8a2f9f0a937c829e31b"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "questions": 416,
+  "records": 832,
+  "prompt_hashes": 1664,
+  "score_vectors_compared": 9984,
+  "max_abcd_logit_difference": 0,
+  "argmax_disagreements": 0,
+  "max_logsumexp_difference": 3.814697265625e-06,
+  "table_identical": true,
+  "identity_exact": true,
+  "independent_full_forward_patch_checks": 16,
+  "max_full_forward_effect_error": 0.25,
+  "peak_reserved_gib": 19.12109375
+}
